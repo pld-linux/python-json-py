@@ -28,6 +28,7 @@ writer in Python.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{py_sitescriptdir}
+install -d $RPM_BUILD_ROOT%{py_sitescriptdir}/json_py-%{version}-py%{py_ver}.egg-info
 
 install *.py $RPM_BUILD_ROOT%{py_sitescriptdir}
 
@@ -35,9 +36,17 @@ install *.py $RPM_BUILD_ROOT%{py_sitescriptdir}
 %py_comp $RPM_BUILD_ROOT%{py_sitescriptdir}
 %py_postclean
 
+echo 'Metadata-Version: 1.0
+Name: %{module}
+Version: %{version}
+Summary: %{summary}
+Home-page: %{url}
+License: %{license}' > $RPM_BUILD_ROOT%{py_sitescriptdir}/json_py-%{version}-py%{py_ver}.egg-info/PKG-INFO
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %{py_sitescriptdir}/*.py[co]
+%{py_sitescriptdir}/json_py*
