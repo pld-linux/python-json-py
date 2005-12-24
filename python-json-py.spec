@@ -17,17 +17,18 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-json.py is an implementation of a JSON (http://json.org) reader and
+json.py is an implementation of a JSON (http://json.org/) reader and
 writer in Python.
+
+%description -l pl
+json.py to implementacja odczytu i zapisu JSON (http://json.org/) w
+Pythonie.
 
 %prep
 %setup -q -c
 
-%build
-
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{py_sitescriptdir}
 install -d $RPM_BUILD_ROOT%{py_sitescriptdir}/json_py-%{version}-py%{py_ver}.egg-info
 
 install *.py $RPM_BUILD_ROOT%{py_sitescriptdir}
