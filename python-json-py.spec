@@ -10,7 +10,7 @@ License:	GPL
 Group:		Development/Languages/Python
 Source0:	http://dl.sourceforge.net/json-py/json-py-3_4.zip
 # Source0-md5:	921ebfede886a10ff32d6d4b4e216f8f
-URL:		http://json-py.sf.net/
+URL:		http://json-py.sourceforge.net/
 %pyrequires_eq	python
 BuildRequires:	unzip
 BuildArch:	noarch
