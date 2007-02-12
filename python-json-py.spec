@@ -2,7 +2,7 @@
 %define	module	json-py
 
 Summary:	JSON implementation
-Summary(pl):	Rozszerzenie json-py do unittest
+Summary(pl.UTF-8):   Rozszerzenie json-py do unittest
 Name:		python-json-py
 Version:	3.4
 Release:	3
@@ -20,7 +20,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 json.py is an implementation of a JSON (http://json.org/) reader and
 writer in Python.
 
-%description -l pl
+%description -l pl.UTF-8
 json.py to implementacja odczytu i zapisu JSON (http://json.org/) w
 Pythonie.
 
