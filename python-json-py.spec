@@ -2,7 +2,7 @@
 %define	module	json-py
 
 Summary:	JSON implementation
-Summary(pl.UTF-8):   Rozszerzenie json-py do unittest
+Summary(pl.UTF-8):	Rozszerzenie json-py do unittest
 Name:		python-json-py
 Version:	3.4
 Release:	3
