@@ -11,8 +11,10 @@ Group:		Development/Languages/Python
 Source0:	http://dl.sourceforge.net/json-py/json-py-3_4.zip
 # Source0-md5:	921ebfede886a10ff32d6d4b4e216f8f
 URL:		http://json-py.sourceforge.net/
-%pyrequires_eq	python
+BuildRequires:	python-modules
+BuildRequires:	rpm-pythonprov
 BuildRequires:	unzip
+%pyrequires_eq	python
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
