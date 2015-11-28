@@ -5,7 +5,7 @@ Summary:	JSON implementation
 Summary(pl.UTF-8):	Rozszerzenie json-py do unittest
 Name:		python-json-py
 Version:	3.4
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Languages/Python
 Source0:	http://dl.sourceforge.net/json-py/json-py-3_4.zip
